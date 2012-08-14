@@ -1,6 +1,5 @@
 - add a working example & all the compile etc scripts
 
-- use captial in documentation for var-names
 - improve documentation & code, currently a bit cryptic as we have different forms of
   tables! Differentiate between the two forms and also write something in the
   README.
