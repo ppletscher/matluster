@@ -1,10 +1,10 @@
 function str = matluster_generateStringFromOptions(options)
-% matluster_generateStringFromOptions generates a string based on options
-%   str = matluster_generateStringFromOptions(options) returns a string based
-%   on the fields of the options struct. For the formatting the special field
-%   options.format is used. It is expected that for each field of the options
-%   struct, there is also an entry in the options.format struct, which
-%   specifies a C style formating string, such as '%d' or '%f'.
+% MATLUSTER_GENERATESTRINGFROMOPTIONS generates a string based on options
+%   STR = MATLUSTER_GENERATESTRINGFROMOPTIONS(OPTIONS) returns a string based
+%   on the fields of the OPTIONS struct. For the formatting the special field
+%   OPTIONS.format is used. It is expected that for each field of the OPTIONS 
+%   struct, there is also an entry in the OPTIONS.format struct, which
+%   specifies a Matlab/C style formating string, such as '%d' or '%f'.
 
 if (~isfield(options, 'format'))
     error('You need to specify a formatting for all the fields!');

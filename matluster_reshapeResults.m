@@ -1,8 +1,8 @@
 function res = matluster_reshapeResults(table, result_fieldname)
-% matluster_reshapeResults converts a matluster datastructure
-%   res = matluster_reshapeResults(table, result_fieldname) converts the
-%   datastructure table to a struct containing an actual table showing
-%   a specific result field.
+% MATLUSTER_RESHAPERESULTS converts a matluster datastructure
+%   RES = MATLUSTER_RESHAPERESULTS(TABLE, RESULT_FIELDNAME) converts the
+%   matluster datastructure TABLE to a struct containing an actual table showing
+%   a specific result field determined by RESULT_FIELDNAME.
 
 res = [];
 res.results = [];
