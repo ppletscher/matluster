@@ -1,5 +1,10 @@
 function str = matluster_generateStringFromOptions(options)
-% TODO: document!
+% matluster_generateStringFromOptions generates a string based on options
+%   str = matluster_generateStringFromOptions(options) returns a string based
+%   on the fields of the options struct. For the formatting the special field
+%   options.format is used. It is expected that for each field of the options
+%   struct, there is also an entry in the options.format struct, which
+%   specifies a C style formating string, such as '%d' or '%f'.
 
 if (~isfield(options, 'format'))
     error('You need to specify a formatting for all the fields!');
@@ -17,6 +22,9 @@ if (isstruct(options))
 
         % process a field
         if (~isstruct(getfield(options, fields{i})))
+            if (~isfield(options.format, fields{i}))
+                error(['You did not specify a formatting option for field ', fields{i}, '!' ]);
+            end
             format = getfield(options.format, fields{i});
             if (numel(str) > 0)
                 str = sprintf('%s_', str);

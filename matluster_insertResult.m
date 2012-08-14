@@ -1,4 +1,8 @@
 function table = matluster_insertResult(table, options, result)
+% matluster_insertResult inserts a new result to a matluster datastructure
+%   table = matluster_insertResult(table, options, result) returns an updated
+%   matluster table, where a result has been added for the configuration
+%   specified in options.
 
 % find correct main index
 main_idx = 0;

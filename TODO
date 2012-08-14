@@ -1,2 +1,5 @@
 - documentation of all the functions
 - add a working example & all the compile etc scripts
+- use captial in documentation for var-names
+- improve documentation, currently a bit cryptic as we have different forms of
+  tables!
