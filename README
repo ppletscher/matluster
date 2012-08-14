@@ -1,0 +1,15 @@
+MATLUSTER = MATlab on the CLUSTER
+
+Matluster is a loose collection of scripts that might prove useful for
+grid-search and hyper-parameter evaluations on a cluster. It also
+features a working example, that shows some of the best practices when working
+with Matlab on a cluster.
+
+The scripts work great for simple hyper-paramter evaluation or different
+train/test data splits often encountered in machine learning. This toolbox
+is utterly useless if you are looking into more complex distributed
+Matlab computations, such as map-reduce.
+
+Think of Matluster as follows: You have a working Matlab algorithm that runs
+in reasonable time (say 5 hrs) for a specific configuration. You now want to
+run the very same algorithm for 1000 different configurations.
