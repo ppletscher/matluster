@@ -1,4 +1,4 @@
-function str = generateStringFromOptions(options)
+function str = matluster_generateStringFromOptions(options)
 % TODO: document!
 
 if (~isfield(options, 'format'))

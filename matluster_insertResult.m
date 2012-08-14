@@ -1,4 +1,4 @@
-function table = insertResult(table, options, result)
+function table = matluster_insertResult(table, options, result)
 
 % find correct main index
 main_idx = 0;

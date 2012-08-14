@@ -1,4 +1,4 @@
-MATLUSTER = MATlab on the CLUSTER
+MATLUSTER: MATlab on the CLUSTER
 
 Matluster is a loose collection of scripts that might prove useful for
 grid-search and hyper-parameter evaluations on a cluster. It also
