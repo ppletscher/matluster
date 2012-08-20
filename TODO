@@ -1,5 +1,6 @@
 - add a working example & all the compile etc scripts
 
+- make generation of the job queue easier, the many folded loops seem silly
 - improve documentation & code, currently a bit cryptic as we have different forms of
   tables! Differentiate between the two forms and also write something in the
-  README.
+  README. Collection vs Table!
