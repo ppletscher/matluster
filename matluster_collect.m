@@ -10,9 +10,9 @@ for run_idx=0:(num_runs-1)
     load(sprintf('local/options_%d.mat', run_idx));
 
     % results
-    conf_str = generateStringFromOptions(options);
+    conf_str = matluster_generateStringFromOptions(options);
     filename = sprintf('output/%s.mat', conf_str);
     load(filename);
 
-    collection = insertResult(collection, options, result);
+    collection = matluster_insertResult(collection, options, result);
 end
